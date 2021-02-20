@@ -36,10 +36,10 @@ const createNewManufacturer = (request, response) => {
 
     pool.query('INSERT INTO manufacturers (name, country, photo_link_one, photo_link_two, short_description, description) VALUES ($1, $2, $3, $4, $5, $6)', [name, country, photo_link_one, photo_link_two, short_description, description], (error, results) => {
         if (error) {
-            throw error;
+             throw error;
         }
 
-        response.status(201).json({'status': 'success' , 'id': results.insertId})
+        response.status(201).json({ 'status': 'success', 'id': results.insertId });
     })
 }
 

@@ -172,7 +172,7 @@ const getSingleOrderById = (request, response) => {
 const createNewOrder = (request, response) => {
     const { order_date, cloth_id, quantity, customer_code } = request.body;
     
-    pool.query('INSERT INTO orders (order_date, cloth_id, quantity, customer_code) VALUES ($1, $2, $3, $4, $5, $6)', [order_date, cloth_id, quantity, customer_code], (error, results) => {
+    pool.query('INSERT INTO orders (order_date, cloth_id, quantity, customer_code) VALUES ($1, $2, $3, $4)', [order_date, cloth_id, quantity, customer_code], (error, results) => {
         if (error) {
             throw error;
         }

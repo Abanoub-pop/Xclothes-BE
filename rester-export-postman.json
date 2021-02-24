@@ -1,0 +1,339 @@
+{
+    "info": {
+        "name": "RESTer",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Xclothes",
+            "item": [
+                {
+                    "request": {
+                        "url": "http://localhost:3000/manufacturers",
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{ \n\"name\": \"Gucci\",\n\"country\": \"ITA\",\n\"photo_link_one\": \"images/gucci(1).png\", \n\"photo_link_two\": \"images/gucci(2).png\", \n\"short_description\": \"Gucci short description\", \n\"description\": \"Gucci full decription\"\n}"
+                        }
+                    },
+                    "id": "rester-3",
+                    "name": "Create New Manufacturer",
+                    "response": [
+                        {
+                            "id": "rester-12",
+                            "name": "2021-02-22T21:23:50.176Z Create New Manufacturer",
+                            "originalRequest": {
+                                "url": "http://localhost:3000/manufacturers",
+                                "method": "POST",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{ \n\"name\": \"Gucci\",\n\"country\": \"ITA\",\n\"photo_link_one\": \"images/gucci(1).png\", \n\"photo_link_two\": \"images/gucci(2).png\", \n\"short_description\": \"Gucci short description\", \n\"description\": \"Gucci full decription\"\n}"
+                                }
+                            },
+                            "responseTime": 109.28499999828637,
+                            "header": [
+                                {
+                                    "key": "X-Powered-By",
+                                    "value": "Express"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json; charset=utf-8"
+                                },
+                                {
+                                    "key": "Content-Length",
+                                    "value": "20"
+                                },
+                                {
+                                    "key": "ETag",
+                                    "value": "W/\"14-Y53wuE/mmbSikKcT/WualL1N65U\""
+                                },
+                                {
+                                    "key": "Date",
+                                    "value": "Mon, 22 Feb 2021 21:23:50 GMT"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                },
+                                {
+                                    "key": "Keep-Alive",
+                                    "value": "timeout=5"
+                                }
+                            ],
+                            "body": "{\"status\":\"success\"}",
+                            "status": "Created",
+                            "code": 201
+                        }
+                    ]
+                },
+                {
+                    "request": {
+                        "url": "http://localhost:3000/manufacturers/11",
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    },
+                    "id": "rester-5",
+                    "name": "Delete Manufacturer"
+                },
+                {
+                    "request": {
+                        "url": "http://localhost:3000/manufacturers/",
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    },
+                    "id": "rester-1",
+                    "name": "Get All manufacturers",
+                    "response": [
+                        {
+                            "id": "rester-13",
+                            "name": "2021-02-22T21:30:00.332Z Get All manufacturers",
+                            "originalRequest": {
+                                "url": "http://localhost:3000/manufacturers/",
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    }
+                                ]
+                            },
+                            "responseTime": 100.70500000473112,
+                            "header": [
+                                {
+                                    "key": "X-Powered-By",
+                                    "value": "Express"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json; charset=utf-8"
+                                },
+                                {
+                                    "key": "Content-Length",
+                                    "value": "1404"
+                                },
+                                {
+                                    "key": "ETag",
+                                    "value": "W/\"57c-WQpWn9y6qftEGFcD89iMdKOF80I\""
+                                },
+                                {
+                                    "key": "Date",
+                                    "value": "Mon, 22 Feb 2021 21:30:00 GMT"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                },
+                                {
+                                    "key": "Keep-Alive",
+                                    "value": "timeout=5"
+                                }
+                            ],
+                            "body": "[{\"id\":1,\"name\":\"Puma\",\"country\":\"GER\",\"photo_link_one\":\"images/puma(1).png\",\"photo_link_two\":\"images/puma(2).png\",\"short_description\":\"Puma short description\",\"description\":\"Puma full decription\"},{\"id\":2,\"name\":\"Adidas\",\"country\":\"GER\",\"photo_link_one\":\"images/adidas(1).png\",\"photo_link_two\":\"images/adidas(2).png\",\"short_description\":\"Adidas short desc\",\"description\":\"Adidas full description\"},{\"id\":3,\"name\":\"Nike\",\"country\":\"USA\",\"photo_link_one\":\"images/nike(1).png\",\"photo_link_two\":\"images/nikes(2).png\",\"short_description\":\"Nike short desc\",\"description\":\"Nike full description\"},{\"id\":4,\"name\":\"La Coste\",\"country\":\"FRA\",\"photo_link_one\":\"images/lacoste(1).png\",\"photo_link_two\":\"images/lacoste(2).png\",\"short_description\":\"La Coste short desc\",\"description\":\"La Coste full description\"},{\"id\":9,\"name\":\"Zara\",\"country\":\"ESP\",\"photo_link_one\":\"images/zara(1).png\",\"photo_link_two\":\"images/zara(2).png\",\"short_description\":\"Zara short description\",\"description\":\"Zara full description\"},{\"id\":10,\"name\":\"Gucci\",\"country\":\"ITA\",\"photo_link_one\":\"images/gucci(1).png\",\"photo_link_two\":\"images/gucci(2).png\",\"short_description\":\"Gucci short description\",\"description\":\"Gucci full decription\"},{\"id\":11,\"name\":\"Gucci\",\"country\":\"ITA\",\"photo_link_one\":\"images/gucci(1).png\",\"photo_link_two\":\"images/gucci(2).png\",\"short_description\":\"Gucci short description\",\"description\":\"Gucci full decription\"}]",
+                            "status": "OK",
+                            "code": 200
+                        },
+                        {
+                            "id": "rester-9",
+                            "name": "2021-02-22T21:04:39.028Z Get All manufacturers",
+                            "originalRequest": {
+                                "url": "http://localhost:3000/manufacturers/",
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    }
+                                ]
+                            },
+                            "responseTime": 90.64500000374392,
+                            "header": [
+                                {
+                                    "key": "X-Powered-By",
+                                    "value": "Express"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json; charset=utf-8"
+                                },
+                                {
+                                    "key": "Content-Length",
+                                    "value": "998"
+                                },
+                                {
+                                    "key": "ETag",
+                                    "value": "W/\"3e6-E71tMG/Xel4J4ddW1C7ZrRCzzxo\""
+                                },
+                                {
+                                    "key": "Date",
+                                    "value": "Mon, 22 Feb 2021 21:04:39 GMT"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                },
+                                {
+                                    "key": "Keep-Alive",
+                                    "value": "timeout=5"
+                                }
+                            ],
+                            "body": "[{\"id\":1,\"name\":\"Puma\",\"country\":\"GER\",\"photo_link_one\":\"images/puma(1).png\",\"photo_link_two\":\"images/puma(2).png\",\"short_description\":\"Puma short description\",\"description\":\"Puma full decription\"},{\"id\":2,\"name\":\"Adidas\",\"country\":\"GER\",\"photo_link_one\":\"images/adidas(1).png\",\"photo_link_two\":\"images/adidas(2).png\",\"short_description\":\"Adidas short desc\",\"description\":\"Adidas full description\"},{\"id\":3,\"name\":\"Nike\",\"country\":\"USA\",\"photo_link_one\":\"images/nike(1).png\",\"photo_link_two\":\"images/nikes(2).png\",\"short_description\":\"Nike short desc\",\"description\":\"Nike full description\"},{\"id\":4,\"name\":\"La Coste\",\"country\":\"FRA\",\"photo_link_one\":\"images/lacoste(1).png\",\"photo_link_two\":\"images/lacoste(2).png\",\"short_description\":\"La Coste short desc\",\"description\":\"La Coste full description\"},{\"id\":9,\"name\":\"Zara\",\"country\":\"ESP\",\"photo_link_one\":\"images/zara(1).png\",\"photo_link_two\":\"images/zara(2).png\",\"short_description\":\"Zara short description\",\"description\":\"Zara full description\"}]",
+                            "status": "OK",
+                            "code": 200
+                        },
+                        {
+                            "id": "rester-8",
+                            "name": "2021-02-22T21:03:19.043Z Get All Manufacturers",
+                            "originalRequest": {
+                                "url": "http://localhost:3000/manufacturers/",
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    }
+                                ]
+                            },
+                            "responseTime": 114.67999999877065,
+                            "header": [
+                                {
+                                    "key": "X-Powered-By",
+                                    "value": "Express"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json; charset=utf-8"
+                                },
+                                {
+                                    "key": "Content-Length",
+                                    "value": "998"
+                                },
+                                {
+                                    "key": "ETag",
+                                    "value": "W/\"3e6-E71tMG/Xel4J4ddW1C7ZrRCzzxo\""
+                                },
+                                {
+                                    "key": "Date",
+                                    "value": "Mon, 22 Feb 2021 21:03:19 GMT"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                },
+                                {
+                                    "key": "Keep-Alive",
+                                    "value": "timeout=5"
+                                }
+                            ],
+                            "body": "[{\"id\":1,\"name\":\"Puma\",\"country\":\"GER\",\"photo_link_one\":\"images/puma(1).png\",\"photo_link_two\":\"images/puma(2).png\",\"short_description\":\"Puma short description\",\"description\":\"Puma full decription\"},{\"id\":2,\"name\":\"Adidas\",\"country\":\"GER\",\"photo_link_one\":\"images/adidas(1).png\",\"photo_link_two\":\"images/adidas(2).png\",\"short_description\":\"Adidas short desc\",\"description\":\"Adidas full description\"},{\"id\":3,\"name\":\"Nike\",\"country\":\"USA\",\"photo_link_one\":\"images/nike(1).png\",\"photo_link_two\":\"images/nikes(2).png\",\"short_description\":\"Nike short desc\",\"description\":\"Nike full description\"},{\"id\":4,\"name\":\"La Coste\",\"country\":\"FRA\",\"photo_link_one\":\"images/lacoste(1).png\",\"photo_link_two\":\"images/lacoste(2).png\",\"short_description\":\"La Coste short desc\",\"description\":\"La Coste full description\"},{\"id\":9,\"name\":\"Zara\",\"country\":\"ESP\",\"photo_link_one\":\"images/zara(1).png\",\"photo_link_two\":\"images/zara(2).png\",\"short_description\":\"Zara short description\",\"description\":\"Zara full description\"}]",
+                            "status": "OK",
+                            "code": 200
+                        },
+                        {
+                            "id": "rester-7",
+                            "name": "2021-02-22T21:02:08.684Z Get Single manufacturer by ID",
+                            "originalRequest": {
+                                "url": "http://localhost:3000/manufacturers/3",
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    }
+                                ]
+                            },
+                            "responseTime": 136.98500000452623,
+                            "header": [
+                                {
+                                    "key": "X-Powered-By",
+                                    "value": "Express"
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json; charset=utf-8"
+                                },
+                                {
+                                    "key": "Content-Length",
+                                    "value": "193"
+                                },
+                                {
+                                    "key": "ETag",
+                                    "value": "W/\"c1-PcHXUm4fT6F377kCwlZzedtLebo\""
+                                },
+                                {
+                                    "key": "Date",
+                                    "value": "Mon, 22 Feb 2021 21:02:08 GMT"
+                                },
+                                {
+                                    "key": "Connection",
+                                    "value": "keep-alive"
+                                },
+                                {
+                                    "key": "Keep-Alive",
+                                    "value": "timeout=5"
+                                }
+                            ],
+                            "body": "[{\"id\":3,\"name\":\"Nike\",\"country\":\"USA\",\"photo_link_one\":\"images/nike(1).png\",\"photo_link_two\":\"images/nikes(2).png\",\"short_description\":\"Nike short desc\",\"description\":\"Nike full description\"}]",
+                            "status": "OK",
+                            "code": 200
+                        }
+                    ]
+                },
+                {
+                    "request": {
+                        "url": "http://localhost:3000/manufacturers/3",
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    },
+                    "id": "rester-2",
+                    "name": "Get single manufacturer by ID"
+                },
+                {
+                    "request": {
+                        "url": "http://localhost:3000/manufacturers/11",
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n        \"name\": \"Gucci1\",\n        \"country\": \"ITO\",\n        \"photo_link_one\": \"images/gucci1(1).png\",\n        \"photo_link_two\": \"images/gucci1(2).png\",\n        \"short_description\": \"Gucci1 short description\",\n        \"description\": \"Gucci1 full decription\"\n    }"
+                        }
+                    },
+                    "id": "rester-4",
+                    "name": "Update Manufacturer"
+                }
+            ]
+        }
+    ]
+}
